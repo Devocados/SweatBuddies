@@ -1,0 +1,87 @@
+:root {
+  font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #1b120d;
+  background:
+    radial-gradient(circle at top, rgba(247, 188, 120, 0.65), transparent 35%),
+    linear-gradient(160deg, #f5e8d7 0%, #f0caa6 45%, #d97941 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button {
+  font: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+}
+
+.hero {
+  width: min(100%, 760px);
+  padding: 3rem;
+  border-radius: 28px;
+  background: rgba(255, 248, 240, 0.78);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 24px 80px rgba(84, 39, 15, 0.18);
+}
+
+.eyebrow {
+  margin: 0 0 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.8rem;
+  color: #9e4f1f;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  line-height: 0.95;
+}
+
+.description {
+  max-width: 38rem;
+  margin: 1.5rem 0 0;
+  font-size: 1.1rem;
+}
+
+.hero button {
+  margin-top: 2rem;
+  border: 0;
+  border-radius: 999px;
+  padding: 0.95rem 1.4rem;
+  background: #1b120d;
+  color: #fff8f0;
+  cursor: pointer;
+}
+
+@media (max-width: 640px) {
+  .app-shell {
+    padding: 1rem;
+  }
+
+  .hero {
+    padding: 2rem;
+  }
+}
